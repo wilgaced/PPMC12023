@@ -12,9 +12,12 @@
 
 int numbers[20] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
 
-int matrix[3][3]= {{1,2,3},
+int matrixA[3][3]= {{1,2,3},
                    {4,5,6},
                    {7,8,9}};
+
+int matrixB[3][3] = {0};
+int matrixR[3][3] = {0};
 
 int main(int argc, char const *argv[])
 {
@@ -29,7 +32,16 @@ int main(int argc, char const *argv[])
     {
        for (int j = 0; j < 3; j++)
        {
-            printf("%d ", matrix[i][j]);
+            scanf("%d", &matrixB[i][j]);
+       }
+       
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+       for (int j = 0; j < 3; j++)
+       {
+            printf("%d ", matrixB[i][j]);
        }
        printf("\n");
        
