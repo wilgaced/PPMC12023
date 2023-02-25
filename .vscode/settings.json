@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "math.h": "c",
+        "corecrt_math.h": "c",
+        "primerprogramacion (1).C": "cpp"
+    }
+}
