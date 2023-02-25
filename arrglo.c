@@ -7,8 +7,11 @@
 /*  Fecha:     9/11/2022                                   */
 /***********************************************************/
 
-
+//Inclucion de archivos cabecera
 #include <stdio.h>
+
+//Declaracion de funcones prototipos
+ void multiplica_matrix(int mA[][3], int mB[][3]);
 
 int numbers[20] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
 
@@ -37,6 +40,8 @@ int main(int argc, char const *argv[])
        
     }
 
+    multiplica_matrix(matrixA, matrixB);
+
     for (int i = 0; i < 3; i++)
     {
        for (int j = 0; j < 3; j++)
@@ -52,3 +57,23 @@ int main(int argc, char const *argv[])
 }
 
 
+void multiplica_matrix(int mA[][3], int mB[][3])
+{
+   for (int i = 0; i < 3; i++)
+   {
+      for (int j = 0; j < 3; j++)
+      matrixR[i][j] = mA[i][j] * mB[i][j];
+
+   }
+
+   for (int i = 0; i < 3; i++)
+    {
+       for (int j = 0; j < 3; j++)
+       {
+            printf("%d ", matrixR[i][j]);
+       }
+       printf("\n");
+       
+    }
+    
+}
