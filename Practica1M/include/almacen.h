@@ -11,9 +11,19 @@
 #ifndef __ALMACEN_H
 #define __ALMACEN_H
 
+typedef struct
+{
+    int items;                      /* number of items*/
+    char description[20];           /* description*/
+    int cantidad;                   /* cantidad de producto */
+    int precioCompras;              /* precio al que se compro el producto */
+    int precioVentas;               /* precio al que se vende el producto */
+    char fechaCompras[20];          /* fecha en que se compro el producto */
+    char fechaVencimiento[20];      /* fecha en que se*/
+}producto;                          /* Estructura de tipo producto */
 
 int menu_almacen(int privelege);
 
 
 
-#endif /* __MAIN_H */
+#endif /* __ALMACEN_H */
