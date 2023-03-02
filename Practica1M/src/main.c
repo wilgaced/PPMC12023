@@ -89,6 +89,7 @@ int main(int argc, char const *argv[])
                 break;
 
             default:
+                printf("Opcion no valida");
                 break;
             }
         }
@@ -98,7 +99,7 @@ int main(int argc, char const *argv[])
             printf("\n");
             printf("please try again later\n");
             usuario.loginstatus = loginfail;
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 5; i++)
             {
                 _beep(3000, 500);
                 _beep(1000, 500);
@@ -113,13 +114,19 @@ int verificar_identidad(char *username, char *password)
     if (strcmp(username, "wilgaced") == 0)
     {
         if (strcmp(password, "12345") == 0)
+        {
             usuario.previlage = admin;
+            return true;
+        }
     }
 
     if (strcmp(username, "pedro") == 0)
     {
         if (strcmp(password, "123456") == 0)
+        {
             usuario.previlage = guess;
+            return true;
+        }
     }
 
     else
