@@ -17,6 +17,7 @@
 
 
 producto productos[100];
+
 int index_product;
 
 //Prototipo de funciones
@@ -33,9 +34,9 @@ int menu_almacen(int previlage)
     
     system("cls");
             printf("Elija el modulo que desea accesar\n");
-            printf("para alamacen precione el.. 1\n");
-            printf("para compras precione el... 2\n");
-            printf("para ventas precione el.... 3\n");
+            printf("para crear producto precione el.. 1\n");
+            printf("para eliminar precione el... 2\n");
+            printf("para visulizar precione el.... 3\n");
             scanf("%d", &opcion);
             switch (opcion)
             {
@@ -78,7 +79,7 @@ static int menu_crear_producto(privilegio)
    fprintf(fp, "%s %s %s %d", "We", "are", "in", 2012);
    
    fclose(fp);
-   
+   index_product++;
    return(0);
 }
 
@@ -103,4 +104,16 @@ void crea_fich(struct producto *productos)
       fprintf(stderr, "Writing to file failed.\n");
       exit(1);
    }
+}
+
+
+static int menu_eliminar_producto(int previlage)
+{
+    printf("funcion no mimplementada aun");
+}
+
+
+static int menu_visulizar_producto(int previlage)
+{
+    printf("funcion no mimplementada aun");
 }
