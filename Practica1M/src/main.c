@@ -56,6 +56,7 @@ int main(int argc, char const *argv[])
 
     do
     {
+        system("cls");
         printf("Bienvenido al sistema de gestion de Empresa SRL\n");
         printf("por favor digite su usuario\n");
 
@@ -129,9 +130,7 @@ int verificar_identidad(char *username, char *password)
         }
     }
 
-    else
-    {
-        return false;
-    }
-    return true;
+    
+    return false;
+    
 }
